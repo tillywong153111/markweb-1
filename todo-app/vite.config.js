@@ -5,12 +5,15 @@ import { resolve } from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  root: '.',  // 明确指定根目录
+  base: '/',  // 指定基础公共路径
   build: {
     outDir: 'dist',
-    sourcemap: true,
-    assetsDir: 'assets',
+    emptyOutDir: true,
     rollupOptions: {
-      input: resolve(__dirname, 'index.html')
+      input: {
+        main: resolve(__dirname, 'index.html')
+      }
     }
   }
 })
