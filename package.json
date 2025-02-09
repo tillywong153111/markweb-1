@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "date-fns": "^4.1.0",
+    "firebase": "^11.3.0",
+    "react-markdown": "^9.0.3"
+  }
+}
