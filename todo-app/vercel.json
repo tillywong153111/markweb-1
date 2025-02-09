@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd todo-app && npm install && npm run build",
+  "buildCommand": "cd todo-app && rm -rf node_modules package-lock.json && npm install && npm run build",
   "outputDirectory": "todo-app/dist",
   "rewrites": [
     {
